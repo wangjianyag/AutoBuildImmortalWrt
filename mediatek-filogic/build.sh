@@ -38,6 +38,11 @@ PACKAGES="$PACKAGES luci-app-ddnsto"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-app-adguardhome"
 PACKAGES="$PACKAGES luci-app-airplay2"
+# 增加几个必备组件 方便用户安装iStore
+PACKAGES="$PACKAGES fdisk"
+PACKAGES="$PACKAGES script-utils"
+PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+# 增加几个必备组件 用于GL.iNet GL-MT3000 接入中兴F50
 PACKAGES="$PACKAGES usb-modeswitch"
 PACKAGES="$PACKAGES usbmuxd"
 PACKAGES="$PACKAGES kmod-usb-acm"
@@ -48,6 +53,7 @@ PACKAGES="$PACKAGES kmod-usb-net-cdc-ether"
 PACKAGES="$PACKAGES kmod-usb-net-cdc-ncm"
 PACKAGES="$PACKAGES kmod-usb-net-huawei-cdc-ncm"
 PACKAGES="$PACKAGES kmod-usb-net-ipheth"
+PACKAGES="$PACKAGES kmod-usb-net-kalmia"
 PACKAGES="$PACKAGES kmod-usb-net-qmi-wwan"
 PACKAGES="$PACKAGES kmod-usb-net-rndis"
 PACKAGES="$PACKAGES kmod-usb-ohci"
@@ -62,12 +68,6 @@ PACKAGES="$PACKAGES kmod-usb2"
 PACKAGES="$PACKAGES kmod-usb3"
 PACKAGES="$PACKAGES libusb-1.0-0"
 PACKAGES="$PACKAGES libusbmuxd"
-PACKAGES="$PACKAGES luci-i18n-opkg-zh-cn"
-# 增加几个必备组件 方便用户安装iStore
-PACKAGES="$PACKAGES fdisk"
-PACKAGES="$PACKAGES script-utils"
-PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
-
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
