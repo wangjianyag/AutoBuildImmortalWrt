@@ -56,7 +56,7 @@ uci get dropbear.@dropbear[0] >/dev/null 2>&1 && uci set dropbear.@dropbear[0].I
 
 # 设置编译作者信息
 FILE_PATH="/etc/openwrt_release"
-NEW_DESCRIPTION="Compiled by YuBai"
+NEW_DESCRIPTION="Compiled by wukongdaily"
 [ -f "$FILE_PATH" ] && sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
 uci commit
