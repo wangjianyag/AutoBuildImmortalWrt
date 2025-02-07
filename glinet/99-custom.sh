@@ -24,8 +24,8 @@ fi
 ip link show ETH2 >/dev/null 2>&1 && {
     uci add network interface >/dev/null 2>&1
     uci set network.@interface[-1].name='USB'
-    uci set network.@interface[-1].proto='dhcp'
-    uci set network.@interface[-1].device='ETH2'
+    uci set network.@interface[-1].proto='DHCP'
+    uci set network.@interface[-1].device='eth2'
     uci set network.@interface[-1].firewall_zone='wan'
 }
 
